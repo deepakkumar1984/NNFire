@@ -1,0 +1,40 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (NNFire.AF.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  BaseConstraint.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  BaseInitializer.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  Constant.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  Global.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  GlorotNormal.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  GlorotUniform.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  HeNormal.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  HeUniform.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  LecunNormal.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  LecunUniform.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  MaxNorm.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  MinMaxNorm.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  NonNeg.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  Ones.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  RandomNormal.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  RandomUniform.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  UnitNorm.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  VarianceScaling.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  Zeros.cpp
+c:\tfs\nnfire\nnfire\global.h(2): fatal error C1083: Cannot open include file: 'arrayfire.h': No such file or directory
+  Generating Code...

@@ -1,0 +1,79 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (NNFire.AF.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  BaseConstraint.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  BaseInitializer.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  Constant.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  Global.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  GlorotNormal.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  GlorotUniform.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  HeNormal.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  HeUniform.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  LecunNormal.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  LecunUniform.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  MaxNorm.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  MinMaxNorm.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  NonNeg.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  Ones.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  RandomNormal.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  RandomUniform.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  UnitNorm.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  VarianceScaling.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  Zeros.cpp
+c:\program files\arrayfire\v3\include\af\exception.h(20): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'af::exception'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vcruntime_exception.h(44): note: see declaration of 'std::exception'
+  c:\program files\arrayfire\v3\include\af\exception.h(19): note: see declaration of 'af::exception'
+  Generating Code...
+  NNFire.AF.vcxproj -> C:\TFS\NNFire\x64\Build\NNFire.lib
