@@ -160,6 +160,12 @@
     <ClInclude Include="Initializers\RandomUniform.h" />
     <ClInclude Include="Initializers\VarianceScaling.h" />
     <ClInclude Include="Initializers\Zeros.h" />
+    <ClInclude Include="Losses\BaseLoss.h" />
+    <ClInclude Include="Losses\BinaryCrossentropy.h" />
+    <ClInclude Include="Losses\CategorialHinge.h" />
+    <ClInclude Include="Losses\CategoricalCrossentropy.h" />
+    <ClInclude Include="Losses\CosineProximity.h" />
+    <ClInclude Include="Losses\Hinge.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Constraints\BaseConstraint.cpp" />
@@ -181,6 +187,12 @@
     <ClCompile Include="Initializers\RandomUniform.cpp" />
     <ClCompile Include="Initializers\VarianceScaling.cpp" />
     <ClCompile Include="Initializers\Zeros.cpp" />
+    <ClCompile Include="Losses\BaseLoss.cpp" />
+    <ClCompile Include="Losses\BinaryCrossentropy.cpp" />
+    <ClCompile Include="Losses\CategorialHinge.cpp" />
+    <ClCompile Include="Losses\CategoricalCrossentropy.cpp" />
+    <ClCompile Include="Losses\CosineProximity.cpp" />
+    <ClCompile Include="Losses\Hinge.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

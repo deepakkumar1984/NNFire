@@ -1,5 +1,6 @@
 #include "VarianceScaling.h"
-#include <math.h>
+#include <cmath>
+
 namespace nn
 {
 	VarianceScaling::VarianceScaling(const float scale, std::string mode, std::string distribution, const int seed)

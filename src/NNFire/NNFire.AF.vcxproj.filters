@@ -25,6 +25,12 @@
     <Filter Include="Header Files\Constraints">
       <UniqueIdentifier>{f9595e94-b053-4a26-a68a-afe3b59cb9c8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Losses">
+      <UniqueIdentifier>{f65fbfb1-5a31-4ad3-a5fc-c3648f1c69e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Losses">
+      <UniqueIdentifier>{a5e9f17e-fdd6-4663-8dff-ad066d1268cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonIncludes.h">
@@ -90,6 +96,24 @@
     <ClInclude Include="Initializers\Zeros.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
+    <ClInclude Include="Losses\BinaryCrossentropy.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\CategorialHinge.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\CategoricalCrossentropy.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\CosineProximity.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\Hinge.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\BaseLoss.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Global.cpp">
@@ -148,6 +172,24 @@
     </ClCompile>
     <ClCompile Include="Constraints\UnitNorm.cpp">
       <Filter>Source Files\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\BaseLoss.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\BinaryCrossentropy.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\CategorialHinge.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\CategoricalCrossentropy.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\CosineProximity.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\Hinge.cpp">
+      <Filter>Source Files\Losses</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

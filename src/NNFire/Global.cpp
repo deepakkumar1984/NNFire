@@ -20,6 +20,7 @@ namespace nn
 	{
 		int size = size_of(shape);
 		af::dim4 dims = NULL;
+		
 		if (size == 1)
 		{
 			dims = af::dim4::dim4(shape[0]);
@@ -38,6 +39,42 @@ namespace nn
 		}
 
 		return dims;
+	}
+
+	af::array Global::afmax(const af::array x, const int axis)
+	{
+		af_array result = NULL;
+		af_max(&result, x.get(), axis);
+		return af::array::array(result);
+	}
+
+	af::array Global::afmaximum(const af::array lhs, const af::array rhs)
+	{
+		af_array result = NULL;
+
+		af_maxof(&result, lhs.get(), rhs.get(), false);
+		return af::array::array(result);
+	}
+
+	af::array Global::afmaximum(const af::array lhs, const float rhs)
+	{
+		af_array result = NULL;
+
+		af_maxof(&result, lhs.get(), af::constant<float>(rhs, lhs.dims()).get(), false);
+		return af::array::array(result);
+	}
+
+	af::array Global::softmax(const af::array x, const int axis)
+	{
+		auto e = exp(x - afmax(x, axis));
+		auto s = sum(e, axis);
+		return e / s;
+	}
+
+	af::array Global::l2_normalize(const af::array x, const int axis)
+	{
+		af::array y = afmax(af::sum(af::pow2(x), axis), axis);
+		return x / af::sqrt(y);
 	}
 
 }
