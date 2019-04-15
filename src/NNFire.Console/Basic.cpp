@@ -1,6 +1,6 @@
 #include <arrayfire.h>
-#include "BaseInitializer.h"
-#include "GlorotUniform.h"
+#include "Initializers/BaseInitializer.h"
+#include "Initializers/GlorotUniform.h"
 using namespace nn;
 int main()
 {

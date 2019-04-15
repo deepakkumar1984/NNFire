@@ -3,3 +3,6 @@
 ################################################################################
 
 /src/.vs/NNFire/v15
+/src/NNFire.Console/x64/Debug
+/src/x64
+/src/NNFire/x64/Debug

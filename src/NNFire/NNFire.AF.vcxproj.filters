@@ -27,124 +27,127 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseConstraint.h">
-      <Filter>Header Files\Constraints</Filter>
-    </ClInclude>
-    <ClInclude Include="MaxNorm.h">
-      <Filter>Header Files\Constraints</Filter>
-    </ClInclude>
     <ClInclude Include="CommonIncludes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MinMaxNorm.h">
+    <ClInclude Include="Constraints\BaseConstraint.h">
       <Filter>Header Files\Constraints</Filter>
     </ClInclude>
-    <ClInclude Include="NonNeg.h">
+    <ClInclude Include="Constraints\MaxNorm.h">
       <Filter>Header Files\Constraints</Filter>
     </ClInclude>
-    <ClInclude Include="UnitNorm.h">
+    <ClInclude Include="Constraints\MinMaxNorm.h">
       <Filter>Header Files\Constraints</Filter>
     </ClInclude>
-    <ClInclude Include="BaseInitializer.h">
+    <ClInclude Include="Constraints\NonNeg.h">
+      <Filter>Header Files\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Constraints\UnitNorm.h">
+      <Filter>Header Files\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Initializers\BaseInitializer.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="Constant.h">
+    <ClInclude Include="Initializers\Constant.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="Zeros.h">
+    <ClInclude Include="Initializers\GlobalParameter.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="VarianceScaling.h">
+    <ClInclude Include="Initializers\GlorotNormal.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="Ones.h">
+    <ClInclude Include="Initializers\GlorotUniform.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="HeNormal.h">
+    <ClInclude Include="Initializers\HeNormal.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="GlorotNormal.h">
+    <ClInclude Include="Initializers\HeUniform.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="GlorotUniform.h">
+    <ClInclude Include="Initializers\LecunNormal.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="RandomNormal.h">
+    <ClInclude Include="Initializers\LecunUniform.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="RandomUniform.h">
+    <ClInclude Include="Initializers\Ones.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="HeUniform.h">
+    <ClInclude Include="Initializers\RandomNormal.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="LecunNormal.h">
+    <ClInclude Include="Initializers\RandomUniform.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
-    <ClInclude Include="LecunUniform.h">
+    <ClInclude Include="Initializers\VarianceScaling.h">
+      <Filter>Header Files\Initializers</Filter>
+    </ClInclude>
+    <ClInclude Include="Initializers\Zeros.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaseConstraint.cpp">
-      <Filter>Source Files\Constraints</Filter>
-    </ClCompile>
-    <ClCompile Include="MaxNorm.cpp">
-      <Filter>Source Files\Constraints</Filter>
-    </ClCompile>
     <ClCompile Include="Global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MinMaxNorm.cpp">
+    <ClCompile Include="Initializers\BaseInitializer.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\Constant.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\GlorotNormal.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\GlorotUniform.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\HeNormal.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\HeUniform.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\LecunNormal.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\LecunUniform.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\Ones.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\RandomNormal.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\RandomUniform.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\VarianceScaling.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers\Zeros.cpp">
+      <Filter>Source Files\Initializers</Filter>
+    </ClCompile>
+    <ClCompile Include="Constraints\BaseConstraint.cpp">
       <Filter>Source Files\Constraints</Filter>
     </ClCompile>
-    <ClCompile Include="NonNeg.cpp">
+    <ClCompile Include="Constraints\MaxNorm.cpp">
       <Filter>Source Files\Constraints</Filter>
     </ClCompile>
-    <ClCompile Include="UnitNorm.cpp">
+    <ClCompile Include="Constraints\MinMaxNorm.cpp">
       <Filter>Source Files\Constraints</Filter>
     </ClCompile>
-    <ClCompile Include="BaseInitializer.cpp">
-      <Filter>Source Files\Initializers</Filter>
+    <ClCompile Include="Constraints\NonNeg.cpp">
+      <Filter>Source Files\Constraints</Filter>
     </ClCompile>
-    <ClCompile Include="Constant.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="Zeros.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="VarianceScaling.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="Ones.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="HeNormal.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="GlorotNormal.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="GlorotUniform.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="RandomUniform.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="HeUniform.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="LecunNormal.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="LecunUniform.cpp">
-      <Filter>Source Files\Initializers</Filter>
-    </ClCompile>
-    <ClCompile Include="RandomNormal.cpp">
-      <Filter>Source Files\Initializers</Filter>
+    <ClCompile Include="Constraints\UnitNorm.cpp">
+      <Filter>Source Files\Constraints</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
