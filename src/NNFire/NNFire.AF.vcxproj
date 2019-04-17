@@ -46,7 +46,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -139,17 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Accuracy.h" />
-    <ClInclude Include="BaseMetric.h" />
     <ClInclude Include="CommonIncludes.h" />
-    <ClInclude Include="constraints.h" />
+    <ClInclude Include="Constraints.h" />
     <ClInclude Include="Constraints\BaseConstraint.h" />
     <ClInclude Include="Constraints\MaxNorm.h" />
     <ClInclude Include="Constraints\MinMaxNorm.h" />
     <ClInclude Include="Constraints\NonNeg.h" />
     <ClInclude Include="Constraints\UnitNorm.h" />
     <ClInclude Include="Global.h" />
-    <ClInclude Include="initializers.h" />
+    <ClInclude Include="Initializers.h" />
     <ClInclude Include="Initializers\BaseInitializer.h" />
     <ClInclude Include="Initializers\Constant.h" />
     <ClInclude Include="Initializers\GlorotNormal.h" />
@@ -163,7 +161,6 @@
     <ClInclude Include="Initializers\RandomUniform.h" />
     <ClInclude Include="Initializers\VarianceScaling.h" />
     <ClInclude Include="Initializers\Zeros.h" />
-    <ClInclude Include="losses.h" />
     <ClInclude Include="Losses\BaseLoss.h" />
     <ClInclude Include="Losses\BinaryCrossentropy.h" />
     <ClInclude Include="Losses\CategorialHinge.h" />
@@ -178,17 +175,24 @@
     <ClInclude Include="Losses\MeanSquaredLogError.h" />
     <ClInclude Include="Losses\Poisson.h" />
     <ClInclude Include="Losses\SquaredHinge.h" />
+    <ClInclude Include="Metrices\Accuracy.h" />
+    <ClInclude Include="Metrices\BaseMetric.h" />
+    <ClInclude Include="Metrices\BinaryAccuracy.h" />
+    <ClInclude Include="Metrices\MAE.h" />
+    <ClInclude Include="Metrices\MAPE.h" />
+    <ClInclude Include="Metrices\MSE.h" />
+    <ClInclude Include="Metrices\MSLE.h" />
     <ClInclude Include="NNDevice.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Accuracy.cpp" />
-    <ClCompile Include="BaseMetric.cpp" />
+    <ClCompile Include="Constraints.cpp" />
     <ClCompile Include="Constraints\BaseConstraint.cpp" />
     <ClCompile Include="Constraints\MaxNorm.cpp" />
     <ClCompile Include="Constraints\MinMaxNorm.cpp" />
     <ClCompile Include="Constraints\NonNeg.cpp" />
     <ClCompile Include="Constraints\UnitNorm.cpp" />
     <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Initializers.cpp" />
     <ClCompile Include="Initializers\BaseInitializer.cpp" />
     <ClCompile Include="Initializers\Constant.cpp" />
     <ClCompile Include="Initializers\GlorotNormal.cpp" />
@@ -216,6 +220,13 @@
     <ClCompile Include="Losses\MeanSquaredLogError.cpp" />
     <ClCompile Include="Losses\Poisson.cpp" />
     <ClCompile Include="Losses\SquaredHinge.cpp" />
+    <ClCompile Include="Metrices\Accuracy.cpp" />
+    <ClCompile Include="Metrices\BaseMetric.cpp" />
+    <ClCompile Include="Metrices\BinaryAccuracy.cpp" />
+    <ClCompile Include="Metrices\MAE.cpp" />
+    <ClCompile Include="Metrices\MAPE.cpp" />
+    <ClCompile Include="Metrices\MSE.cpp" />
+    <ClCompile Include="Metrices\MSLE.cpp" />
     <ClCompile Include="NNDevice.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

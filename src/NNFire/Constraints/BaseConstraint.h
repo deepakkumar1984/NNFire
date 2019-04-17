@@ -11,7 +11,7 @@ namespace nn {
 		BaseConstraint();
 		virtual ~BaseConstraint();
 
-		virtual array Call(const array x) = 0;
+		virtual array Call(const array x);
 	};
 }
 

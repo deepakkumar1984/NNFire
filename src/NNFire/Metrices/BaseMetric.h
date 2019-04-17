@@ -1,6 +1,6 @@
 #pragma once
-#include "Global.h"
-#include "CommonIncludes.h"
+#include "../Global.h"
+#include "../CommonIncludes.h"
 
 namespace nn
 {

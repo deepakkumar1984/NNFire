@@ -15,6 +15,9 @@ namespace nn
 		auto p = argmax(preds);
 		auto l = argmax(labels);
 		
-		
+		af_array eqResult = NULL;
+		af_eq(&eqResult, preds.get(), labels.get(), false);
+
+		return array(eqResult);
 	}
 }
