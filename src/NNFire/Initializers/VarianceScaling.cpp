@@ -47,15 +47,15 @@ namespace nn
 		float factor = 1.0;
 		if (Mode == "fan_avg")
 		{
-			factor = Scale / max(1, (in + out) / 2.0f);
+			factor = Scale / std::fmax(1, (in + out) / 2.0f);
 		}
 		else if (Mode == "fan_in")
 		{
-			factor = Scale / max(1, in);
+			factor = Scale / std::fmax(1, in);
 		}
 		else if (Mode == "fan_out")
 		{
-			factor = Scale / max(1, out);
+			factor = Scale / std::fmax(1, out);
 		}
 
 		if (Distribution == "uniform")

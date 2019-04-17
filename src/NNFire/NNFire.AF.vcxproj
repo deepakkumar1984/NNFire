@@ -139,16 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Accuracy.h" />
+    <ClInclude Include="BaseMetric.h" />
     <ClInclude Include="CommonIncludes.h" />
+    <ClInclude Include="constraints.h" />
     <ClInclude Include="Constraints\BaseConstraint.h" />
     <ClInclude Include="Constraints\MaxNorm.h" />
     <ClInclude Include="Constraints\MinMaxNorm.h" />
     <ClInclude Include="Constraints\NonNeg.h" />
     <ClInclude Include="Constraints\UnitNorm.h" />
     <ClInclude Include="Global.h" />
+    <ClInclude Include="initializers.h" />
     <ClInclude Include="Initializers\BaseInitializer.h" />
     <ClInclude Include="Initializers\Constant.h" />
-    <ClInclude Include="Initializers\GlobalParameter.h" />
     <ClInclude Include="Initializers\GlorotNormal.h" />
     <ClInclude Include="Initializers\GlorotUniform.h" />
     <ClInclude Include="Initializers\HeNormal.h" />
@@ -160,14 +163,26 @@
     <ClInclude Include="Initializers\RandomUniform.h" />
     <ClInclude Include="Initializers\VarianceScaling.h" />
     <ClInclude Include="Initializers\Zeros.h" />
+    <ClInclude Include="losses.h" />
     <ClInclude Include="Losses\BaseLoss.h" />
     <ClInclude Include="Losses\BinaryCrossentropy.h" />
     <ClInclude Include="Losses\CategorialHinge.h" />
     <ClInclude Include="Losses\CategoricalCrossentropy.h" />
     <ClInclude Include="Losses\CosineProximity.h" />
     <ClInclude Include="Losses\Hinge.h" />
+    <ClInclude Include="Losses\KullbackLeiblerDivergence.h" />
+    <ClInclude Include="Losses\LogCosh.h" />
+    <ClInclude Include="Losses\MeanAbsoluteError.h" />
+    <ClInclude Include="Losses\MeanAbsolutePercentageError.h" />
+    <ClInclude Include="Losses\MeanSquaredError.h" />
+    <ClInclude Include="Losses\MeanSquaredLogError.h" />
+    <ClInclude Include="Losses\Poisson.h" />
+    <ClInclude Include="Losses\SquaredHinge.h" />
+    <ClInclude Include="NNDevice.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Accuracy.cpp" />
+    <ClCompile Include="BaseMetric.cpp" />
     <ClCompile Include="Constraints\BaseConstraint.cpp" />
     <ClCompile Include="Constraints\MaxNorm.cpp" />
     <ClCompile Include="Constraints\MinMaxNorm.cpp" />
@@ -193,6 +208,15 @@
     <ClCompile Include="Losses\CategoricalCrossentropy.cpp" />
     <ClCompile Include="Losses\CosineProximity.cpp" />
     <ClCompile Include="Losses\Hinge.cpp" />
+    <ClCompile Include="Losses\KullbackLeiblerDivergence.cpp" />
+    <ClCompile Include="Losses\LogCosh.cpp" />
+    <ClCompile Include="Losses\MeanAbsoluteError.cpp" />
+    <ClCompile Include="Losses\MeanAbsolutePercentageError.cpp" />
+    <ClCompile Include="Losses\MeanSquaredError.cpp" />
+    <ClCompile Include="Losses\MeanSquaredLogError.cpp" />
+    <ClCompile Include="Losses\Poisson.cpp" />
+    <ClCompile Include="Losses\SquaredHinge.cpp" />
+    <ClCompile Include="NNDevice.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

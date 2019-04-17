@@ -20,36 +20,36 @@ namespace nn
 		return array();
 	}
 
-	BaseLoss BaseLoss::Get(Global::LossType lossType)
+	BaseLoss BaseLoss::Get(nn::LossType lossType)
 	{
 		BaseLoss result = BaseLoss::BaseLoss("loss");
 		switch (lossType)
 		{
-		case nn::Global::MeanSquaredError:
+		case nn::LossType::MeanSquaredError:
 			break;
-		case nn::Global::MeanAbsoluteError:
+		case nn::LossType::MeanAbsoluteError:
 			break;
-		case nn::Global::MeanAbsolutePercentageError:
+		case nn::LossType::MeanAbsolutePercentageError:
 			break;
-		case nn::Global::MeanAbsoluteLogError:
+		case nn::LossType::MeanAbsoluteLogError:
 			break;
-		case nn::Global::SquaredHinge:
+		case nn::LossType::SquaredHinge:
 			break;
-		case nn::Global::Hinge:
+		case nn::LossType::Hinge:
 			break;
-		case nn::Global::BinaryCrossEntropy:
+		case nn::LossType::BinaryCrossEntropy:
 			break;
-		case nn::Global::CategorialCrossEntropy:
+		case nn::LossType::CategorialCrossEntropy:
 			break;
-		case nn::Global::KullbackLeiblerDivergence:
+		case nn::LossType::KullbackLeiblerDivergence:
 			break;
-		case nn::Global::Logcosh:
+		case nn::LossType::Logcosh:
 			break;
-		case nn::Global::Poisson:
+		case nn::LossType::Poisson:
 			break;
-		case nn::Global::CosineProximity:
+		case nn::LossType::CosineProximity:
 			break;
-		case nn::Global::CTC:
+		case nn::LossType::CTC:
 			break;
 		default:
 			break;

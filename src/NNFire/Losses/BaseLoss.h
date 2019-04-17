@@ -14,7 +14,7 @@ namespace nn
 		virtual array Forward(const array preds, const array labels);
 		virtual array Backward(const array preds, const array labels);
 
-		static BaseLoss Get(Global::LossType lossType);
+		static BaseLoss Get(nn::LossType lossType);
 	};
 }
 

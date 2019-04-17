@@ -1,5 +1,6 @@
 #include "CosineProximity.h"
 
+
 namespace nn
 {
 	CosineProximity::CosineProximity() : BaseLoss("cosine_proximity")
@@ -18,8 +19,9 @@ namespace nn
 
 	array CosineProximity::Backward(const array preds, const array labels)
 	{
-		auto y_true = afmax((sum(labels, 1), 1) / abs(preds * abs(labels)), 1);
-		auto y_pred = afmax((sum(preds, 1), 1) / pow2(abs(preds)), 1);
+		
+		auto y_true = max((sum(labels, 1), 1) / abs(preds * abs(labels)), 1);
+		auto y_pred = max((sum(preds, 1), 1) / pow2(abs(preds)), 1);
 		return y_true + cossine_sim(preds, labels) * y_pred;
 	}
 	

@@ -31,6 +31,12 @@
     <Filter Include="Source Files\Losses">
       <UniqueIdentifier>{a5e9f17e-fdd6-4663-8dff-ad066d1268cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Metrices">
+      <UniqueIdentifier>{fdb94161-4bdd-450d-a1a8-45132ede0b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Metrices">
+      <UniqueIdentifier>{6eeeb60d-854f-4608-8ec2-eaae7f6cb894}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonIncludes.h">
@@ -58,9 +64,6 @@
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
     <ClInclude Include="Initializers\Constant.h">
-      <Filter>Header Files\Initializers</Filter>
-    </ClInclude>
-    <ClInclude Include="Initializers\GlobalParameter.h">
       <Filter>Header Files\Initializers</Filter>
     </ClInclude>
     <ClInclude Include="Initializers\GlorotNormal.h">
@@ -113,6 +116,48 @@
     </ClInclude>
     <ClInclude Include="Losses\BaseLoss.h">
       <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\KullbackLeiblerDivergence.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\LogCosh.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\MeanAbsoluteError.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\MeanAbsolutePercentageError.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\MeanSquaredError.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\MeanSquaredLogError.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\Poisson.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses\SquaredHinge.h">
+      <Filter>Header Files\Losses</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseMetric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Accuracy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constraints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="initializers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="losses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NNDevice.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +235,39 @@
     </ClCompile>
     <ClCompile Include="Losses\Hinge.cpp">
       <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\KullbackLeiblerDivergence.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\LogCosh.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\MeanAbsoluteError.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\MeanAbsolutePercentageError.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\MeanSquaredError.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\MeanSquaredLogError.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\Poisson.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses\SquaredHinge.cpp">
+      <Filter>Source Files\Losses</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseMetric.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Accuracy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NNDevice.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
