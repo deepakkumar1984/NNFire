@@ -4,19 +4,17 @@
 
 namespace nn
 {
-	namespace metrices {
-		class BaseMetric :
-			public Global
-		{
-		public:
-			std::string Name;
+	class BaseMetric :
+		public Global
+	{
+	public:
+		std::string Name;
 
-			BaseMetric(std::string name);
-			~BaseMetric();
+		BaseMetric(std::string name);
+		~BaseMetric();
 
-			array Calculate(const array preds, const array labels);
-			static BaseMetric* Get(MetricType metricType);
-		};
-	}
+		array Calculate(const array preds, const array labels);
+		static BaseMetric* Get(MetricType metricType);
+	};
 }
 
