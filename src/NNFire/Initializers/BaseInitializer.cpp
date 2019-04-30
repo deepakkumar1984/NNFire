@@ -1,8 +1,7 @@
 #include "BaseInitializer.h"
 
-namespace nn
-{
-	namespace initializers {
+namespace nn{
+	namespace initializer {
 		BaseInitializer::BaseInitializer(std::string name)
 		{
 			Name = name;

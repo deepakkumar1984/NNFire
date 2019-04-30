@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		RandomNormal::RandomNormal(float mean, float stddev, int seed)
 			: BaseInitializer("random_normal")
 		{

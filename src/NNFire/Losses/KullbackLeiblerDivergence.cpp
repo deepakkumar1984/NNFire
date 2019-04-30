@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		KullbackLeiblerDivergence::KullbackLeiblerDivergence() : BaseLoss("kullback_leibler_divergence")
 		{
 		}

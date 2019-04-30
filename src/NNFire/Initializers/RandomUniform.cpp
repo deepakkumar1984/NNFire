@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		RandomUniform::RandomUniform(float min, float max, int seed)
 			: BaseInitializer("random_uniform")
 		{

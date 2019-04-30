@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		BinaryCrossentropy::BinaryCrossentropy(bool fromLogit)
 			: BaseLoss("binary_crossentropy")
 		{

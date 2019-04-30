@@ -2,7 +2,7 @@
 #include "BaseInitializer.h"
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		class VarianceScaling :
 			public BaseInitializer
 		{

@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		Poisson::Poisson() : BaseLoss("poisson")
 		{
 		}

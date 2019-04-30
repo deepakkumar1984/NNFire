@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		class MeanAbsoluteError :
 			public BaseLoss
 		{

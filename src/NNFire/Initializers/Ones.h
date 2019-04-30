@@ -1,7 +1,7 @@
 #pragma once
 #include "Constant.h"
 namespace nn {
-	namespace initializers {
+	namespace initializer {
 		class Ones :
 			public Constant
 		{

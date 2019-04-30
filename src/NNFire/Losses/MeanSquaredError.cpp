@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		MeanSquaredError::MeanSquaredError() : BaseLoss("mean_squared_error")
 		{
 		}

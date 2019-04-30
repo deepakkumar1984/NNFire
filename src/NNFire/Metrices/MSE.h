@@ -4,7 +4,7 @@
 
 namespace nn
 {
-	namespace metrices {
+	namespace metric {
 		class MSE :
 			public BaseMetric
 		{

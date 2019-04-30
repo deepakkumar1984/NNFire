@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		MeanAbsoluteError::MeanAbsoluteError() : BaseLoss("mean_absolute_error")
 		{
 		}

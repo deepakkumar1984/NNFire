@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		class HeNormal :
 			public VarianceScaling
 		{

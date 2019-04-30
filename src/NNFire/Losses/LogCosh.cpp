@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		LogCosh::LogCosh() : BaseLoss("logcosh")
 		{
 		}

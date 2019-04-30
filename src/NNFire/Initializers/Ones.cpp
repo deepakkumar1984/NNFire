@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		Ones::Ones() : Constant(1)
 		{
 			Name = "ones";

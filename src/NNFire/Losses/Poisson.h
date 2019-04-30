@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		class Poisson :
 			public BaseLoss
 		{

@@ -40,6 +40,39 @@
     <Filter Include="Header Files\Layers">
       <UniqueIdentifier>{5594d0ed-ce9d-45bd-bdc5-9a0e5cfe1cf5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Layers">
+      <UniqueIdentifier>{9d0be14f-4b94-4aec-aef3-1e00998349fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Layers\Activations">
+      <UniqueIdentifier>{66c58f43-db2f-41b9-98ca-877f6b7fdb94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Layers\Core">
+      <UniqueIdentifier>{ec03865e-0da0-457c-a178-62ee74a3a441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Layers\Convolution">
+      <UniqueIdentifier>{d649805f-51f4-4a32-bb81-813f23efe4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Layers\Pooling">
+      <UniqueIdentifier>{1ff50fe5-7795-4a5a-a876-0bd4861ca4e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Layers\Core">
+      <UniqueIdentifier>{b85b9782-f798-4727-8d7b-c9892e3b63d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Layers\Convolution">
+      <UniqueIdentifier>{e0489569-afc0-428c-b9c6-312e8c3f9753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Layers\Pooling">
+      <UniqueIdentifier>{fdfef18b-a8db-4cdf-9909-cbbcc24606ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Layers\Activations">
+      <UniqueIdentifier>{15cbd4ce-db9b-44b4-ada8-5f5dfa9ea93c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Regularizers">
+      <UniqueIdentifier>{0e15d2dc-cbb3-4447-ab9c-ec7b7cb36ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Regularizers">
+      <UniqueIdentifier>{78d36197-bbf8-42e0-9d39-83f4dfc11b20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonIncludes.h">
@@ -150,9 +183,6 @@
     <ClInclude Include="initializers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="losses.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="NNDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -179,6 +209,39 @@
     </ClInclude>
     <ClInclude Include="Metrices\Accuracy.h">
       <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Parameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Regularizers\BaseRegularizer.h">
+      <Filter>Header Files\Regularizers</Filter>
+    </ClInclude>
+    <ClInclude Include="Regularizers\L1.h">
+      <Filter>Header Files\Regularizers</Filter>
+    </ClInclude>
+    <ClInclude Include="Regularizers\L1L2.h">
+      <Filter>Header Files\Regularizers</Filter>
+    </ClInclude>
+    <ClInclude Include="Regularizers\L2.h">
+      <Filter>Header Files\Regularizers</Filter>
+    </ClInclude>
+    <ClInclude Include="Losses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Regularizers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Layers\Activations\Elu.h">
+      <Filter>Header Files\Layers\Activations</Filter>
+    </ClInclude>
+    <ClInclude Include="Layers\Activations\Exp.h">
+      <Filter>Header Files\Layers\Activations</Filter>
+    </ClInclude>
+    <ClInclude Include="Layers\Activations\LeakyReLU.h">
+      <Filter>Header Files\Layers\Activations</Filter>
+    </ClInclude>
+    <ClInclude Include="Layers\BaseLayer.h">
+      <Filter>Header Files\Layers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -304,6 +367,45 @@
     </ClCompile>
     <ClCompile Include="Metrices\Accuracy.cpp">
       <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Parameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Regularizers\BaseRegularizer.cpp">
+      <Filter>Source Files\Regularizers</Filter>
+    </ClCompile>
+    <ClCompile Include="Regularizers\L1.cpp">
+      <Filter>Source Files\Regularizers</Filter>
+    </ClCompile>
+    <ClCompile Include="Regularizers\L1L2.cpp">
+      <Filter>Source Files\Regularizers</Filter>
+    </ClCompile>
+    <ClCompile Include="Regularizers\L2.cpp">
+      <Filter>Source Files\Regularizers</Filter>
+    </ClCompile>
+    <ClCompile Include="Constraints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Losses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Regularizers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Layers\Activations\Elu.cpp">
+      <Filter>Source Files\Layers\Activations</Filter>
+    </ClCompile>
+    <ClCompile Include="Layers\Activations\Exp.cpp">
+      <Filter>Source Files\Layers\Activations</Filter>
+    </ClCompile>
+    <ClCompile Include="Layers\Activations\LeakyReLU.cpp">
+      <Filter>Source Files\Layers\Activations</Filter>
+    </ClCompile>
+    <ClCompile Include="Layers\BaseLayer.cpp">
+      <Filter>Source Files\Layers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

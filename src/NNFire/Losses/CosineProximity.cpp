@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		CosineProximity::CosineProximity() : BaseLoss("cosine_proximity")
 		{
 		}

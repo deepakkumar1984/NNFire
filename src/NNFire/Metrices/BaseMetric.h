@@ -13,7 +13,7 @@ namespace nn
 		BaseMetric(std::string name);
 		~BaseMetric();
 
-		array Calculate(const array preds, const array labels);
+		virtual array Calculate(const array preds, const array labels);
 		static BaseMetric* Get(MetricType metricType);
 	};
 }

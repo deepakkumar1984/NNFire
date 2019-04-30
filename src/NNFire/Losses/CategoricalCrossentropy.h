@@ -2,7 +2,7 @@
 #include "BaseLoss.h"
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		class CategoricalCrossentropy :
 			public BaseLoss
 		{

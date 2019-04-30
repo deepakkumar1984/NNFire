@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		Constant::Constant(const float value) : BaseInitializer("constant")
 		{
 			Value = value;

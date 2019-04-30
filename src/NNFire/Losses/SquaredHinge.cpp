@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		SquaredHinge::SquaredHinge() : BaseLoss("squared_hinge")
 		{
 		}

@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		GlorotNormal::GlorotNormal(int seed) :
 			VarianceScaling(1, "fan_avg", "normal", seed)
 		{

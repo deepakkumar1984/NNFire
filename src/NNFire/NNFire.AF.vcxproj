@@ -161,7 +161,11 @@
     <ClInclude Include="Initializers\RandomUniform.h" />
     <ClInclude Include="Initializers\VarianceScaling.h" />
     <ClInclude Include="Initializers\Zeros.h" />
-    <ClInclude Include="losses.h" />
+    <ClInclude Include="Layers\Activations\Elu.h" />
+    <ClInclude Include="Layers\Activations\Exp.h" />
+    <ClInclude Include="Layers\Activations\LeakyReLU.h" />
+    <ClInclude Include="Layers\BaseLayer.h" />
+    <ClInclude Include="Losses.h" />
     <ClInclude Include="Losses\BaseLoss.h" />
     <ClInclude Include="Losses\BinaryCrossentropy.h" />
     <ClInclude Include="Losses\CategorialHinge.h" />
@@ -185,14 +189,22 @@
     <ClInclude Include="Metrices\MSE.h" />
     <ClInclude Include="Metrices\MSLE.h" />
     <ClInclude Include="NNDevice.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="Regularizers.h" />
+    <ClInclude Include="Regularizers\BaseRegularizer.h" />
+    <ClInclude Include="Regularizers\L1.h" />
+    <ClInclude Include="Regularizers\L1L2.h" />
+    <ClInclude Include="Regularizers\L2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Constraints.cpp" />
     <ClCompile Include="Constraints\BaseConstraint.cpp" />
     <ClCompile Include="Constraints\MaxNorm.cpp" />
     <ClCompile Include="Constraints\MinMaxNorm.cpp" />
     <ClCompile Include="Constraints\NonNeg.cpp" />
     <ClCompile Include="Constraints\UnitNorm.cpp" />
     <ClCompile Include="Global.cpp" />
+    <ClCompile Include="Initializers.cpp" />
     <ClCompile Include="Initializers\BaseInitializer.cpp" />
     <ClCompile Include="Initializers\Constant.cpp" />
     <ClCompile Include="Initializers\GlorotNormal.cpp" />
@@ -206,6 +218,11 @@
     <ClCompile Include="Initializers\RandomUniform.cpp" />
     <ClCompile Include="Initializers\VarianceScaling.cpp" />
     <ClCompile Include="Initializers\Zeros.cpp" />
+    <ClCompile Include="Layers\Activations\Elu.cpp" />
+    <ClCompile Include="Layers\Activations\Exp.cpp" />
+    <ClCompile Include="Layers\Activations\LeakyReLU.cpp" />
+    <ClCompile Include="Layers\BaseLayer.cpp" />
+    <ClCompile Include="Losses.cpp" />
     <ClCompile Include="Losses\BaseLoss.cpp" />
     <ClCompile Include="Losses\BinaryCrossentropy.cpp" />
     <ClCompile Include="Losses\CategorialHinge.cpp" />
@@ -228,6 +245,12 @@
     <ClCompile Include="Metrices\MSE.cpp" />
     <ClCompile Include="Metrices\MSLE.cpp" />
     <ClCompile Include="NNDevice.cpp" />
+    <ClCompile Include="Parameter.cpp" />
+    <ClCompile Include="Regularizers.cpp" />
+    <ClCompile Include="Regularizers\BaseRegularizer.cpp" />
+    <ClCompile Include="Regularizers\L1.cpp" />
+    <ClCompile Include="Regularizers\L1L2.cpp" />
+    <ClCompile Include="Regularizers\L2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

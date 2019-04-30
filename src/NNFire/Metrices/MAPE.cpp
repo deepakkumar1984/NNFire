@@ -2,8 +2,8 @@
 
 namespace nn
 {
-	namespace metrices {
-		using namespace losses;
+	namespace metric {
+		using namespace loss;
 		MAPE::MAPE() : BaseMetric("mape")
 		{
 		}

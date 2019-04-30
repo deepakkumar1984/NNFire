@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		CategorialHinge::CategorialHinge() : BaseLoss("categorical_hinge")
 		{
 		}

@@ -2,7 +2,7 @@
 #include "VarianceScaling.h"
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		class HeUniform :
 			public VarianceScaling
 		{

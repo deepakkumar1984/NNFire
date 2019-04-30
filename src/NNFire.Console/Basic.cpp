@@ -3,7 +3,7 @@
 #include "initializers.h"
 #include "constraints.h"
 
-using namespace nn::initializers;
+using namespace nn::initializer;
 using namespace nn;
 
 int main()
@@ -13,9 +13,8 @@ int main()
 	arr = arr / 5;
 	af_print(arr);
 	
-	BaseInitializer *c = new GlorotUniform();
-	auto result = c->Generate(new int[2] {2, 6});
-	
+	BaseConstraint* con = Constraints::MaxNorm();
+	array result = con->Call(arr);
 	af_print(result);
 	return 0;
 }

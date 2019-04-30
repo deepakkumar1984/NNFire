@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		VarianceScaling::VarianceScaling(const float scale, std::string mode, std::string distribution, const int seed)
 			: BaseInitializer("variance_scaling")
 		{

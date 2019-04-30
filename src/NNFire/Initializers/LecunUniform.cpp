@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		LecunUniform::LecunUniform(int seed)
 			: VarianceScaling(1, "fan_in", "uniform", seed)
 		{

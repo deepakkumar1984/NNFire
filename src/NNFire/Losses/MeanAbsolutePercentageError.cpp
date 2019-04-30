@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		MeanAbsolutePercentageError::MeanAbsolutePercentageError() : BaseLoss("mean_absolute_percentage_error")
 		{
 		}

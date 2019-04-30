@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace initializers {
+	namespace initializer {
 		HeNormal::HeNormal(int seed)
 			: VarianceScaling(2, "fan_in", "normal", seed)
 		{

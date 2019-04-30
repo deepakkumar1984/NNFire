@@ -15,6 +15,7 @@
 
 namespace nn
 {
+	using namespace initializer;
 	class Initializers
 	{
 	public:

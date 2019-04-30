@@ -27,6 +27,7 @@ namespace nn
 		af::array ravel(const af::array x);
 		af::array argmax(const af::array x);
 		af::array argmin(const af::array x);
+		float sum_all(const af::array x);
 	};
 
 	enum LossType

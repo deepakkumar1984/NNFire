@@ -11,6 +11,11 @@ namespace nn
 		BaseConstraint::~BaseConstraint()
 		{
 		}
+
+		array BaseConstraint::Call(const array x)
+		{
+			return array();
+		}
 	}
 }
 

@@ -41,13 +41,6 @@ namespace nn
 		return dims;
 	}
 
-	/*af::array Global::afmax(const af::array x, const int axis)
-	{
-		af_array result = NULL;
-		af_max(&result, x.get(), axis);
-		return af::array::array(result);
-	}*/
-
 	af::array Global::maximum(const af::array lhs, const af::array rhs)
 	{
 		af_array result = NULL;
@@ -106,5 +99,14 @@ namespace nn
 		af_array idx = NULL;
 		auto err = af_topk(&values, &idx, x.get(), 1, 1, af::topkFunction::AF_TOPK_MIN);
 		return af::array(values);
+	}
+
+	float Global::sum_all(const af::array x)
+	{
+		double real = 0;
+		double imag = 0;
+
+		auto err = af_sum_all(&real, &imag, x.get());
+		return real;
 	}
 }

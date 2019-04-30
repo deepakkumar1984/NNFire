@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace metrices {
+	namespace metric {
 		BinaryAccuracy::BinaryAccuracy() : BaseMetric("binary_accuracy")
 		{
 		}

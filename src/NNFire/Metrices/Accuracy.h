@@ -3,7 +3,7 @@
 
 namespace nn
 {
-	namespace metrices {
+	namespace metric {
 		class Accuracy :
 			public BaseMetric
 		{

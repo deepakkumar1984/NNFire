@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		CategoricalCrossentropy::CategoricalCrossentropy(bool fromLogit)
 			: BaseLoss("categorical_crossentropy")
 		{

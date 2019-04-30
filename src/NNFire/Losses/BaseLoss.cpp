@@ -2,7 +2,7 @@
 
 namespace nn
 {
-	namespace losses {
+	namespace loss {
 		BaseLoss::BaseLoss(std::string name)
 		{
 		}
