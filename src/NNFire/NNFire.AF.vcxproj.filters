@@ -156,9 +156,6 @@
     <ClInclude Include="NNDevice.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Metrices\Accuracy.h">
-      <Filter>Header Files\Metrices</Filter>
-    </ClInclude>
     <ClInclude Include="Metrices\BaseMetric.h">
       <Filter>Header Files\Metrices</Filter>
     </ClInclude>
@@ -179,6 +176,9 @@
     </ClInclude>
     <ClInclude Include="metrices.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\Accuracy.h">
+      <Filter>Header Files\Metrices</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -284,9 +284,6 @@
     <ClCompile Include="NNDevice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Metrices\Accuracy.cpp">
-      <Filter>Source Files\Metrices</Filter>
-    </ClCompile>
     <ClCompile Include="Metrices\BaseMetric.cpp">
       <Filter>Source Files\Metrices</Filter>
     </ClCompile>
@@ -303,6 +300,9 @@
       <Filter>Source Files\Metrices</Filter>
     </ClCompile>
     <ClCompile Include="Metrices\MSLE.cpp">
+      <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\Accuracy.cpp">
       <Filter>Source Files\Metrices</Filter>
     </ClCompile>
   </ItemGroup>
