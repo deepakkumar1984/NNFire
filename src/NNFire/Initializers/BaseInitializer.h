@@ -3,15 +3,18 @@
 
 namespace nn
 {
-	class BaseInitializer :
-		public Global
+	namespace initializers
 	{
-	public:
-		std::string Name;
-		BaseInitializer(std::string name);
-		~BaseInitializer();
+		class BaseInitializer :
+			public Global
+		{
+		public:
+			std::string Name;
+			BaseInitializer(std::string name);
+			~BaseInitializer();
 
-		virtual array Generate(int shape[]);
-	};
+			virtual array Generate(int shape[]);
+		};
+	}
 }
 

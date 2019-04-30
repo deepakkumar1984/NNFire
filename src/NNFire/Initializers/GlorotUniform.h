@@ -3,11 +3,13 @@
 
 namespace nn
 {
-	class GlorotUniform :
-		public VarianceScaling
-	{
-	public:
-		GlorotUniform(int seed = 0);
-		~GlorotUniform();
-	};
+	namespace initializers {
+		class GlorotUniform :
+			public VarianceScaling
+		{
+		public:
+			GlorotUniform(int seed = 0);
+			~GlorotUniform();
+		};
+	}
 }

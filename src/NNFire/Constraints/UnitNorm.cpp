@@ -2,16 +2,18 @@
 
 namespace nn
 {
-	UnitNorm::UnitNorm(const int axis)
-	{
-	}
+	namespace constraint {
+		UnitNorm::UnitNorm(const int axis)
+		{
+		}
 
-	UnitNorm::~UnitNorm()
-	{
-	}
+		UnitNorm::~UnitNorm()
+		{
+		}
 
-	array UnitNorm::Call(const array& x)
-	{
-		return x / (Epsilon + sqrt(sum(pow2(x), Axis)));
+		array UnitNorm::Call(const array& x)
+		{
+			return x / (Epsilon + sqrt(sum(pow2(x), Axis)));
+		}
 	}
 }

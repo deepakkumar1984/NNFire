@@ -3,14 +3,16 @@
 
 namespace nn
 {
-	class Hinge :
-		public BaseLoss
-	{
-	public:
-		Hinge();
-		~Hinge();
+	namespace losses {
+		class Hinge :
+			public BaseLoss
+		{
+		public:
+			Hinge();
+			~Hinge();
 
-		array Forward(const array preds, const array labels);
-		array Backward(const array preds, const array labels);
-	};
+			array Forward(const array preds, const array labels);
+			array Backward(const array preds, const array labels);
+		};
+	}
 }

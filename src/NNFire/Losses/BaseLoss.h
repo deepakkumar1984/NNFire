@@ -3,18 +3,20 @@
 
 namespace nn
 {
-	class BaseLoss : public Global
-	{
-	public:
-		std::string Name;
+	namespace losses {
+		class BaseLoss : public Global
+		{
+		public:
+			std::string Name;
 
-		BaseLoss(std::string name);
-		~BaseLoss();
+			BaseLoss(std::string name);
+			~BaseLoss();
 
-		virtual array Forward(const array preds, const array labels);
-		virtual array Backward(const array preds, const array labels);
+			virtual array Forward(const array preds, const array labels);
+			virtual array Backward(const array preds, const array labels);
 
-		static BaseLoss Get(nn::LossType lossType);
-	};
+			static BaseLoss Get(nn::LossType lossType);
+		};
+	}
 }
 

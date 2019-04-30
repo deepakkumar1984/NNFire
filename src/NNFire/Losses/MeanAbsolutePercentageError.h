@@ -3,15 +3,17 @@
 
 namespace nn
 {
-	class MeanAbsolutePercentageError :
-		public BaseLoss
-	{
-	public:
-		MeanAbsolutePercentageError();
-		~MeanAbsolutePercentageError();
+	namespace losses {
+		class MeanAbsolutePercentageError :
+			public BaseLoss
+		{
+		public:
+			MeanAbsolutePercentageError();
+			~MeanAbsolutePercentageError();
 
-		array Forward(const array preds, const array labels);
-		array Backward(const array preds, const array labels);
-	};
+			array Forward(const array preds, const array labels);
+			array Backward(const array preds, const array labels);
+		};
+	}
 }
 

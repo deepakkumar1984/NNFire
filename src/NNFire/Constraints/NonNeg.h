@@ -3,14 +3,16 @@
 
 namespace nn
 {
-	class NonNeg :
-		public BaseConstraint
-	{
-	public:
-		NonNeg();
-		~NonNeg();
+	namespace constraint {
+		class NonNeg :
+			public BaseConstraint
+		{
+		public:
+			NonNeg();
+			~NonNeg();
 
-		array Call(const array& x);
-	};
+			array Call(const array& x);
+		};
+	}
 }
 

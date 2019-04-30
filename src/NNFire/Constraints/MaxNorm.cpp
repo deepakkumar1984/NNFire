@@ -2,23 +2,25 @@
 
 namespace nn
 {
-	MaxNorm::MaxNorm(const float max, const int axis)
-	{
-		MaxValue = max;
-		Axis = axis;
-	}
+	namespace constraint {
+		MaxNorm::MaxNorm(const float max, const int axis)
+		{
+			MaxValue = max;
+			Axis = axis;
+		}
 
-	MaxNorm::~MaxNorm()
-	{
-	}
+		MaxNorm::~MaxNorm()
+		{
+		}
 
-	array MaxNorm::Call(const array& x)
-	{
-		array norms = sqrt(sum(pow2(x), Axis));
-		array desired = clamp(norms, 0, MaxValue);
+		array MaxNorm::Call(const array& x)
+		{
+			array norms = sqrt(sum(pow2(x), Axis));
+			array desired = clamp(norms, 0, MaxValue);
 
-		auto result = (desired / (Epsilon + norms));
+			auto result = (desired / (Epsilon + norms));
 
-		return result;
+			return result;
+		}
 	}
 }

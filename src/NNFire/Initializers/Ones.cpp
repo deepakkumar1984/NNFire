@@ -2,14 +2,15 @@
 
 namespace nn
 {
+	namespace initializers {
+		Ones::Ones() : Constant(1)
+		{
+			Name = "ones";
+		}
 
-	Ones::Ones() : Constant(1)
-	{
-		Name = "ones";
-	}
 
-
-	Ones::~Ones()
-	{
+		Ones::~Ones()
+		{
+		}
 	}
 }

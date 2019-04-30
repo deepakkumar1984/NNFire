@@ -3,16 +3,18 @@
 
 namespace nn
 {
-	class MaxNorm :
-		public BaseConstraint
-	{
-	public:
-		float MaxValue;
-		int Axis;
-		MaxNorm(const float max = 2, const int axis = 0);
-		~MaxNorm();
+	namespace constraint {
+		class MaxNorm :
+			public BaseConstraint
+		{
+		public:
+			float MaxValue;
+			int Axis;
+			MaxNorm(const float max = 2, const int axis = 0);
+			~MaxNorm();
 
-		array Call(const array& x);
-	};
+			array Call(const array& x);
+		};
+	}
 }
 

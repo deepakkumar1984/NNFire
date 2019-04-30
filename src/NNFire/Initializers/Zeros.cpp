@@ -3,14 +3,15 @@
 
 namespace nn
 {
-	Zeros::Zeros() : Constant(0)
-	{
-		Name = "zeros";
+	namespace initializers {
+		Zeros::Zeros() : Constant(0)
+		{
+			Name = "zeros";
+		}
+
+
+		Zeros::~Zeros()
+		{
+		}
 	}
-
-
-	Zeros::~Zeros()
-	{
-	}
-
 }

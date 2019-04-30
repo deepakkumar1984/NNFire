@@ -3,19 +3,21 @@
 
 namespace nn
 {
-	class MinMaxNorm :
-		public BaseConstraint
-	{
-	public:
-		float MinValue;
-		float MaxValue;
-		float Rate;
-		int Axis;
+	namespace constraint {
+		class MinMaxNorm :
+			public BaseConstraint
+		{
+		public:
+			float MinValue;
+			float MaxValue;
+			float Rate;
+			int Axis;
 
-		MinMaxNorm(const float minValue = 0, const float maxValue = 1, const float rate = 1, const int axis = 0);
-		~MinMaxNorm();
+			MinMaxNorm(const float minValue = 0, const float maxValue = 1, const float rate = 1, const int axis = 0);
+			~MinMaxNorm();
 
-		array Call(const array& x);
-	};
+			array Call(const array& x);
+		};
+	}
 }
 

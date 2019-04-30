@@ -3,18 +3,20 @@
 
 namespace nn
 {
-	class RandomNormal :
-		public BaseInitializer
-	{
-	public:
-		float Mean;
-		float StdDev;
-		int Seed;
+	namespace initializers {
+		class RandomNormal :
+			public BaseInitializer
+		{
+		public:
+			float Mean;
+			float StdDev;
+			int Seed;
 
-		RandomNormal(float mean = 0, float stddev=0, int seed = 0);
-		~RandomNormal();
+			RandomNormal(float mean = 0, float stddev = 0, int seed = 0);
+			~RandomNormal();
 
-		array Generate(int shape[]);
-	};
+			array Generate(int shape[]);
+		};
+	}
 }
 

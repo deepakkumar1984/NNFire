@@ -139,8 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Accuracy.h" />
-    <ClInclude Include="BaseMetric.h" />
     <ClInclude Include="CommonIncludes.h" />
     <ClInclude Include="constraints.h" />
     <ClInclude Include="Constraints\BaseConstraint.h" />
@@ -178,11 +176,17 @@
     <ClInclude Include="Losses\MeanSquaredLogError.h" />
     <ClInclude Include="Losses\Poisson.h" />
     <ClInclude Include="Losses\SquaredHinge.h" />
+    <ClInclude Include="metrices.h" />
+    <ClInclude Include="Metrices\Accuracy.h" />
+    <ClInclude Include="Metrices\BaseMetric.h" />
+    <ClInclude Include="Metrices\BinaryAccuracy.h" />
+    <ClInclude Include="Metrices\MAE.h" />
+    <ClInclude Include="Metrices\MAPE.h" />
+    <ClInclude Include="Metrices\MSE.h" />
+    <ClInclude Include="Metrices\MSLE.h" />
     <ClInclude Include="NNDevice.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Accuracy.cpp" />
-    <ClCompile Include="BaseMetric.cpp" />
     <ClCompile Include="Constraints\BaseConstraint.cpp" />
     <ClCompile Include="Constraints\MaxNorm.cpp" />
     <ClCompile Include="Constraints\MinMaxNorm.cpp" />
@@ -216,6 +220,13 @@
     <ClCompile Include="Losses\MeanSquaredLogError.cpp" />
     <ClCompile Include="Losses\Poisson.cpp" />
     <ClCompile Include="Losses\SquaredHinge.cpp" />
+    <ClCompile Include="Metrices\Accuracy.cpp" />
+    <ClCompile Include="Metrices\BaseMetric.cpp" />
+    <ClCompile Include="Metrices\BinaryAccuracy.cpp" />
+    <ClCompile Include="Metrices\MAE.cpp" />
+    <ClCompile Include="Metrices\MAPE.cpp" />
+    <ClCompile Include="Metrices\MSE.cpp" />
+    <ClCompile Include="Metrices\MSLE.cpp" />
     <ClCompile Include="NNDevice.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

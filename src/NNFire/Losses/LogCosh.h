@@ -3,18 +3,20 @@
 
 namespace nn
 {
-	class LogCosh :
-		public BaseLoss
-	{
-	public:
-		LogCosh();
-		~LogCosh();
+	namespace losses {
+		class LogCosh :
+			public BaseLoss
+		{
+		public:
+			LogCosh();
+			~LogCosh();
 
-		array Forward(const array preds, const array labels);
-		array Backward(const array preds, const array labels);
+			array Forward(const array preds, const array labels);
+			array Backward(const array preds, const array labels);
 
-	private:
-		array _logcosh(array x);
-	};
+		private:
+			array _logcosh(array x);
+		};
+	}
 }
 

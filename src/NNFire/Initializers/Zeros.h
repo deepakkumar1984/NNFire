@@ -3,13 +3,15 @@
 
 namespace nn
 {
-	class Zeros :
-		public Constant
-	{
-	public:
-		Zeros();
-		~Zeros();
+	namespace initializers {
+		class Zeros :
+			public Constant
+		{
+		public:
+			Zeros();
+			~Zeros();
 
-	};
+		};
+	}
 }
 

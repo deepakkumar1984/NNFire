@@ -3,16 +3,18 @@
 
 namespace nn
 {
-	class Constant :
-		public BaseInitializer
-	{
-	public:
-		float Value;
+	namespace initializers {
+		class Constant :
+			public BaseInitializer
+		{
+		public:
+			float Value;
 
-		Constant(const float value = 0);
-		~Constant();
+			Constant(const float value = 0);
+			~Constant();
 
-		array Generate(int shape[]);
-	};
+			array Generate(int shape[]);
+		};
+	}
 }
 

@@ -2,19 +2,21 @@
 
 namespace nn
 {
-	Constant::Constant(const float value) : BaseInitializer("constant")
-	{
-		Value = value;
-	}
+	namespace initializers {
+		Constant::Constant(const float value) : BaseInitializer("constant")
+		{
+			Value = value;
+		}
 
-	Constant::~Constant()
-	{
-	}
+		Constant::~Constant()
+		{
+		}
 
-	array Constant::Generate(int shape[])
-	{
-		auto dims = get_dims(shape);
+		array Constant::Generate(int shape[])
+		{
+			auto dims = get_dims(shape);
 
-		return constant<float>(Value, dims);
+			return constant<float>(Value, dims);
+		}
 	}
 }

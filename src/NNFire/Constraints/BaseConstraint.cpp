@@ -2,13 +2,15 @@
 
 namespace nn
 {
-	BaseConstraint::BaseConstraint()
-	{
-	}
+	namespace constraint {
+		BaseConstraint::BaseConstraint()
+		{
+		}
 
 
-	BaseConstraint::~BaseConstraint()
-	{
+		BaseConstraint::~BaseConstraint()
+		{
+		}
 	}
 }
 

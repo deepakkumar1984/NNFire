@@ -2,14 +2,16 @@
 
 namespace nn
 {
-	HeUniform::HeUniform(int seed) :
-		VarianceScaling(2, "fan_in", "uniform", seed)
-	{
-		Name = "he_uniform";
-	}
+	namespace initializers {
+		HeUniform::HeUniform(int seed) :
+			VarianceScaling(2, "fan_in", "uniform", seed)
+		{
+			Name = "he_uniform";
+		}
 
 
-	HeUniform::~HeUniform()
-	{
+		HeUniform::~HeUniform()
+		{
+		}
 	}
 }

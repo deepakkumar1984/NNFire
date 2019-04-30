@@ -2,15 +2,16 @@
 
 namespace nn
 {
+	namespace initializers {
+		LecunUniform::LecunUniform(int seed)
+			: VarianceScaling(1, "fan_in", "uniform", seed)
+		{
+			Name = "lecun_uniform";
+		}
 
-	LecunUniform::LecunUniform(int seed)
-		: VarianceScaling(1, "fan_in", "uniform", seed)
-	{
-		Name = "lecun_uniform";
-	}
 
-
-	LecunUniform::~LecunUniform()
-	{
+		LecunUniform::~LecunUniform()
+		{
+		}
 	}
 }

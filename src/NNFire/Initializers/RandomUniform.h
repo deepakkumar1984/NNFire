@@ -3,18 +3,20 @@
 
 namespace nn
 {
-	class RandomUniform :
-		public BaseInitializer
-	{
-	public:
-		float Min;
-		float Max;
-		int Seed;
+	namespace initializers {
+		class RandomUniform :
+			public BaseInitializer
+		{
+		public:
+			float Min;
+			float Max;
+			int Seed;
 
-		RandomUniform(float min = 0, float max = 0.05, int seed = 0);
-		~RandomUniform();
+			RandomUniform(float min = 0, float max = 0.05, int seed = 0);
+			~RandomUniform();
 
-		array Generate(int shape[]);
-	};
+			array Generate(int shape[]);
+		};
+	}
 }
 

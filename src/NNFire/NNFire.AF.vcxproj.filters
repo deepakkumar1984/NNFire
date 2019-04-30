@@ -37,6 +37,9 @@
     <Filter Include="Source Files\Metrices">
       <UniqueIdentifier>{6eeeb60d-854f-4608-8ec2-eaae7f6cb894}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Layers">
+      <UniqueIdentifier>{5594d0ed-ce9d-45bd-bdc5-9a0e5cfe1cf5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CommonIncludes.h">
@@ -141,12 +144,6 @@
     <ClInclude Include="Losses\SquaredHinge.h">
       <Filter>Header Files\Losses</Filter>
     </ClInclude>
-    <ClInclude Include="BaseMetric.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Accuracy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="constraints.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -157,6 +154,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="NNDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\Accuracy.h">
+      <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\BaseMetric.h">
+      <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\BinaryAccuracy.h">
+      <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\MAE.h">
+      <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\MAPE.h">
+      <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\MSE.h">
+      <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="Metrices\MSLE.h">
+      <Filter>Header Files\Metrices</Filter>
+    </ClInclude>
+    <ClInclude Include="metrices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -260,14 +281,29 @@
     <ClCompile Include="Losses\SquaredHinge.cpp">
       <Filter>Source Files\Losses</Filter>
     </ClCompile>
-    <ClCompile Include="BaseMetric.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Accuracy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="NNDevice.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\Accuracy.cpp">
+      <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\BaseMetric.cpp">
+      <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\BinaryAccuracy.cpp">
+      <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\MAE.cpp">
+      <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\MAPE.cpp">
+      <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\MSE.cpp">
+      <Filter>Source Files\Metrices</Filter>
+    </ClCompile>
+    <ClCompile Include="Metrices\MSLE.cpp">
+      <Filter>Source Files\Metrices</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

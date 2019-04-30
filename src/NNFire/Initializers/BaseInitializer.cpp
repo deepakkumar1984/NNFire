@@ -2,17 +2,19 @@
 
 namespace nn
 {
-	BaseInitializer::BaseInitializer(std::string name)
-	{
-		Name = name;
-	}
+	namespace initializers {
+		BaseInitializer::BaseInitializer(std::string name)
+		{
+			Name = name;
+		}
 
-	BaseInitializer::~BaseInitializer()
-	{
-	}
+		BaseInitializer::~BaseInitializer()
+		{
+		}
 
-	array BaseInitializer::Generate(int shape[])
-	{
-		return array();
+		array BaseInitializer::Generate(int shape[])
+		{
+			return array();
+		}
 	}
 }

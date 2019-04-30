@@ -3,12 +3,14 @@
 
 namespace nn
 {
-	class LecunUniform :
-		public VarianceScaling
-	{
-	public:
-		LecunUniform(int seed = 0);
-		~LecunUniform();
-	};
+	namespace initializers {
+		class LecunUniform :
+			public VarianceScaling
+		{
+		public:
+			LecunUniform(int seed = 0);
+			~LecunUniform();
+		};
+	}
 }
 
