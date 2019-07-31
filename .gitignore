@@ -7,3 +7,5 @@
 /src/x64
 /src/NNFire/x64/Debug
 /src/.vs/NNFire/v16
+/src/NNFire/x64/Release
+/src/NNFire.Console/x64/Release

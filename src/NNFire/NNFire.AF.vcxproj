@@ -33,7 +33,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -50,9 +50,9 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -98,7 +98,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(AF_PATH)/include;C:\ArrayFire-v3.6.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AF_PATH)/include;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +132,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>(AF_PATH)/include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,6 +148,7 @@
     <ClInclude Include="Constraints\MinMaxNorm.h" />
     <ClInclude Include="Constraints\NonNeg.h" />
     <ClInclude Include="Constraints\UnitNorm.h" />
+    <ClInclude Include="Functions.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="initializers.h" />
     <ClInclude Include="Initializers\BaseInitializer.h" />
@@ -195,6 +198,7 @@
     <ClInclude Include="Regularizers\L1.h" />
     <ClInclude Include="Regularizers\L1L2.h" />
     <ClInclude Include="Regularizers\L2.h" />
+    <ClInclude Include="Variable.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Constraints.cpp" />
@@ -203,6 +207,7 @@
     <ClCompile Include="Constraints\MinMaxNorm.cpp" />
     <ClCompile Include="Constraints\NonNeg.cpp" />
     <ClCompile Include="Constraints\UnitNorm.cpp" />
+    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="Global.cpp" />
     <ClCompile Include="Initializers.cpp" />
     <ClCompile Include="Initializers\BaseInitializer.cpp" />
@@ -251,6 +256,7 @@
     <ClCompile Include="Regularizers\L1.cpp" />
     <ClCompile Include="Regularizers\L1L2.cpp" />
     <ClCompile Include="Regularizers\L2.cpp" />
+    <ClCompile Include="Variable.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
