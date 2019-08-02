@@ -67,6 +67,7 @@ namespace nn {
 		if (m_shared->m_grads.size() == 0) {
 			throw af::exception("Gradient hasn't been calculated yet.");
 		}
+
 		return m_shared->m_grads[0];
 	}
 	std::ptrdiff_t Variable::id() const
@@ -163,6 +164,9 @@ namespace nn {
 		if (!m_shared->m_calc_grad) return;
 
 		// Best not to evaluate the JIT immediately if theres only a single gradient
+		if (m_shared->m_grads.size() == 0)
+			return;
+
 		Variable grad = m_shared->m_grads[0];
 		if (m_shared->m_grads.size() > 1) {
 			for (unsigned i = 1; i < m_shared->m_grads.size(); i++) {

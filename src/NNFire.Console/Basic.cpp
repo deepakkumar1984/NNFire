@@ -20,12 +20,13 @@ int main()
 	af_print(result);*/
 
 	auto x = Variable(af::constant(5.0, 5), true);
-	auto y = x * x;
-	y.zeroGrad();
+	auto y = nn::sigmoid(x);
 	af_print(y.array());
 	auto dy = Variable(af::constant(1.0, 5), false);
-	y.backward(dy);
+	y.backward(dy, true);
+	y.grad();
 	af_print(dy.array());
+	//x.backward(dy);
 	auto dx = x.grad();
 	af_print(dx.array());
 	int a;
